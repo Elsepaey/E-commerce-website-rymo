@@ -1,0 +1,320 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+
+    <meta charset="UTF-8">
+
+</head>
+<body>
+{% extends 'base.html'%}
+{%load static%}
+{%block content%}
+        <section id="home">
+            <div class="container">
+                <h5>NEW ARRAIVALS</h5>
+                <h1> <span>Best Price</span> This Year</h1>
+                <p>Shoomatic offers years very Comfortable time <br>
+                    on walking and exercise.</p>
+                <button><a href="#Shope">Shop Now</a></button>
+            </div>
+        </section>
+
+        <section id="brand" class="container">
+            <div class="row m-0 py-5">
+                <img  class="img-fluid col-lg-2 col-md-4 col-6" src="{% static 'img/brand/1.png' %}" alt="">
+                <img  class="img-fluid col-lg-2 col-md-4 col-6" src="{% static 'img/brand/2.png' %}" alt="">
+                <img  class="img-fluid col-lg-2 col-md-4 col-6" src="{% static 'img/brand/3.png' %}" alt="">
+                <img  class="img-fluid col-lg-2 col-md-4 col-6" src="{% static 'img/brand/4.png' %}" alt="">
+                <img  class="img-fluid col-lg-2 col-md-4 col-6" src="{% static 'img/brand/5.png' %}" alt="">
+                <img  class="img-fluid col-lg-2 col-md-4 col-6" src="{% static 'img/brand/6.png' %}" alt="">
+            </div>
+
+
+        </section>
+
+        <section id="new w-100">
+            <div class="row  ">
+                <div class="one col-lg-4 col-md-12 col-12 ">
+                    <img class="img-fluid" src="{% static 'img/new/1.jpg' %}" alt="">
+
+                </div>
+                <div class="one col-lg-4 col-md-12 col-12 ">
+                    <img class="img-fluid " src="{% static 'img/new/2.jpg' %}" alt="">
+
+                </div>
+                <div class="one col-lg-4 col-md-12 col-12 ">
+                    <img class="img-fluid " src="{% static 'img/new/3.jpg' %}" alt="">
+
+                </div>
+
+            </div>
+
+        </section>
+        <section id="featured my-5 pb-5">
+            <div id="Shope" class="container text-center mt-5 py-5">
+                <h3>Our Featured</h3>
+                <hr class="mx-auto">
+                <p>Here you can check our new products with fair price on rymo.</p>
+            </div>
+            <div  class="row mx-auto container-fluid">
+                 <div class="row mx-auto container-fluid">
+                {% for shoe in shoes|slice:':1' %}
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <button class="buy-btn"><a href="#">add to cart</a></button>
+
+                    <img class="img-fluid mb-3" src="{{shoe.photo.url}}" alt="{{shoe.name}}">
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h5 class="p-name">{{shoe.name}}</h5>
+                    <h4 class="p-price">{{shoe.price}}</h4>
+                    <button class="buy-btn"><a href="{% url 'payment' %}">Buy Now</a></button>
+                    <button class="buy-btn"><a href="#">details</a></button>
+
+                </div>
+                 {% endfor %}
+                      {% for shirt in shirts|slice:':1' %}
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <button class="buy-btn"><a href="#">add to cart</a></button>
+                    <img class="img-fluid mb-3" src="{{shirt.photo.url}}" alt="{{shirt.name}}">
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h5 class="p-name">{{shirt.name}}</h5>
+                    <h4 class="p-price">{{shirt.price}}</h4>
+                    <button class="buy-btn"><a href="{% url 'payment' %}">Buy Now</a></button>
+                    <button class="buy-btn"><a href="#">details</a></button>
+
+                </div>
+                {%endfor%}
+                     {% for B in bag|slice:':1' %}
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <button class="buy-btn"><a href="#">add to cart</a></button>
+                    <img class="img-fluid mb-3" src="{{B.photo.url}}" alt="{{B.name}}">
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h5 class="p-name">{{B.name}}</h5>
+                    <h4 class="p-price">{{B.price}}</h4>
+                    <button class="buy-btn"><a href="{% url 'payment' %}">Buy Now</a></button>
+                    <button class="buy-btn"><a href="#">details</a></button>
+
+                </div>
+                 {% endfor %}
+                     {% for watch in watches|slice:':1' %}
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <button class="buy-btn"><a href="#">add to cart</a></button>
+                    <img class="img-fluid mb-3" src="{{watch.photo.url}}" alt="{{watch.name}}">
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h5 class="p-name">{{watch.name}}</h5>
+                    <h4 class="p-price">{{watch.price}}</h4>
+                    <button class="buy-btn"><a href="{% url 'payment' %}">Buy Now</a></button>
+                    <button class="buy-btn"><a href="#">details</a></button>
+
+                </div>
+                {%endfor%}
+            </div>
+
+
+
+
+
+            </div>
+
+        </section>
+
+<section id="watches my-5 py-5">
+            <div id="Shope3" class="container text-center mt-5 py-5">
+                <h3>Best for men</h3>
+                <hr class="mx-auto">
+                <p>Here you can check our new products with fair price on rymo.</p>
+                 <a class="product" href="{%url 'men'%}">See more products.....</a>
+            </div>
+            <div class="row mx-auto container-fluid">
+                {% for shirt in shirts|slice:':4' %}
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <form>
+                        <button type="submit" class="buy-btn" ><a href="{% url 'index'  %}">add to cart</a></button>
+
+                    <input type="hidden" value={{shirt.price}} name='price'>
+                        <input type="hidden" value={{shirt.pro_id}} name='photo'>
+                        <input type="hidden" value={{shirt.name}} name='name'>
+                    </form>
+
+                    <img class="img-fluid mb-3" src="{{shirt.photo.url}}" alt="{{shirt.name}}">
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h5 class="p-name">{{shirt.name}}</h5>
+                    <h4 class="p-price">{{shirt.price}}</h4>
+                    <form method="get">
+                    <button class="buy-btn"><a href="{% url 'details' pro_id=1 %}">details</a></button>
+                    <input type="hidden" value={{shirt.price}} name='price'>
+                    </form>
+
+                </div>
+                {%endfor%}
+
+
+            </div>
+
+        </section>
+        <section id="banner"class=" my-5 py-5">
+            <div id="Shope1" class="container">
+                <h4>MID SEASON'S SALE</h4>
+                <h1>Autumn Collection <br>Up To 20% Off</h1>
+                <button class="text-uppercase"><a href="{% url 'payment' %}">Shop Now</a></button>
+            </div>
+        </section>
+        <section id="clothes my-5 py-5">
+            <div class="container text-center mt-5 py-5">
+                <h3>Dresses & jumpsuits</h3>
+                <hr class="mx-auto">
+                <p>Here you can check our new products with fair price on rymo.</p>
+                 <a class="product" href="{% url 'dresses'%}">See more products.....</a>
+            </div>
+            <div class="row mx-auto container-fluid">
+                {% for d in dress|slice:':4' %}
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="{{d.photo.url}}" alt="{{d.name}}">
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h5 class="p-name">{{d.name}}</h5>
+                    <h4 class="p-price">{{d.price}}</h4>
+                    <button class="buy-btn"><a href="{% url 'payment' %}">Buy Now</a></button>
+
+                </div>
+                {%endfor%}
+
+            </div>
+
+        </section>
+        <section id="watches my-5 py-5">
+            <div id="Shope3" class="container text-center mt-5 py-5">
+                <h3>Best Watches</h3>
+                <hr class="mx-auto">
+                <p>Here you can check our new products with fair price on rymo.</p>
+                 <a class="product" href="{% url 'watches'%}">See more products.....</a>
+            </div>
+            <div class="row mx-auto container-fluid">
+                {% for watch in watches|slice:':4'%}
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+                    <img class="img-fluid mb-3" src="{{watch.photo.url}}" alt="{{watch.name}}">
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h5 class="p-name">{{watch.name}}</h5>
+                    <h4 class="p-price">{{watch.price}}</h4>
+                    <button class="buy-btn"><a href="{% url 'payment' %}">Buy Now</a></button>
+
+                </div>
+                {%endfor%}
+
+
+            </div>
+
+        </section>
+ <section id="Shoes my-5 py-5">
+            <div id="Shope3" class="container text-center mt-5 py-5">
+                <h3>Bags</h3>
+                <hr class="mx-auto">
+                <p>Here you can check our new products with fair price on rymo.</p>
+                 <a class="product" href="{% url 'bags' %}">See more products.....</a>
+            </div>
+            <div class="row mx-auto container-fluid">
+                {% for B in bag|slice:':4' %}
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+
+                    <img class="img-fluid mb-3" src="{{B.photo.url}}" alt="{{B.name}}">
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h5 class="p-name">{{B.name}}</h5>
+                    <h4 class="p-price">{{B.price}}</h4>
+                    <button class="buy-btn"><a href="#payment">Buy Now</a></button>
+
+                </div>
+                 {% endfor %}
+
+
+
+
+            </div>
+
+        </section>
+        <section id="Shoes my-5 py-5">
+            <div id="Shope3" class="container text-center mt-5 py-5">
+                <h3>Running Shoes</h3>
+                <hr class="mx-auto">
+                <p>Here you can check our new products with fair price on rymo.</p>
+                 <a class="product" href="{% url 'shoes'%}">See more products.....</a>
+            </div>
+            <div class="row mx-auto container-fluid">
+                {% for shoe in shoes|slice:':4' %}
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+
+                    <img class="img-fluid mb-3" src="{{shoe.photo.url}}" alt="{{shoe.name}}">
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h5 class="p-name">{{shoe.name}}</h5>
+                    <h4 class="p-price">{{shoe.price}}</h4>
+                    <button class="buy-btn"><a href="{% url 'payment' %}">Buy Now</a></button>
+
+                </div>
+                 {% endfor %}
+
+
+
+
+            </div>
+
+        </section>
+        <h1 id="payment"></h1>
+
+
+{%endblock%}
+</body>
+</html>

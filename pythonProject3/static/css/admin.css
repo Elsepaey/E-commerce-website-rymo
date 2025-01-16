@@ -1,0 +1,43 @@
+
+#header
+{
+background-color:rgb(240, 240, 240);
+color:black;
+}
+#header a:link,#header a:visited
+{
+color:black
+}
+.module h2, .module caption, .inline-group h2
+{
+background-color:rgb(0, 51, 99);
+}
+div.breadcrumbs
+{
+background-color:rgb(0, 10, 34);
+}
+rgb(0, 51, 99)
+
+.selector-chosen h2 {
+background-color:rgb(0, 51, 99) ;
+}
+.button, input[type=submit], input[type=button], .submit-row input, a.button
+{
+background-color:rgb(30, 49, 61);
+
+}
+.button.default, input[type=submit].default, .submit-row input.default
+{
+background-color:rgb(0, 51, 99);
+}
+.button a:hover,
+ input[type=submit]:hover,
+ input[type=button]:hover,
+ .submit-row input:hover,
+  a.button:hover {
+background-color:rgb(0, 51, 99);
+}
+.submit-row a.deletelink
+{
+background-color:rgba(194, 2, 0, 0.7)!important;
+}

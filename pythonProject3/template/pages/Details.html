@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+             .small-img-group
+                {
+                    display: flex;
+                    justify-content: space-between;
+                }
+                .small-img-col
+                {
+                    flex-basis: 24%;
+                    cursor: pointer;
+                }
+
+                .btn-cart
+                {
+                    background: #fd8c66;
+                    margin-top: 10px;
+                    align-items: center
+                }
+             .prod select
+             {
+                 display: block;
+                 padding: 5px 10px;
+                 font-size: 16px;
+                 border-radius: 5px;
+             }
+             .prod input
+             {
+                 width: 50px;
+                 height: 48px;
+                 padding-left: 10px;
+                 font-size: 16px;
+                 margin-right: 10px
+             }
+              .prod input:focus
+             {
+                 outline: none;
+             }
+
+
+         </style>
+</head>
+<body>
+{% extends 'base.html'%}
+{%load static%}
+{%block content%}
+<section class="container prod my-5 pt-5">
+            <div class="row mt-5">
+                <div id="img_prod" class="col-lg-5 col-md-12 col-12">
+                    <img class=" img-product img-fluid w-90 pb-1" src="{% static 'img/clothes/men/th.jpg'%}" alt="aa">
+
+                </div>
+                <div class="col-lg-6 col-md-12 col-12">
+                    <h6>Home / T-Shirt</h6>
+                    <h3 class="my-3">{{men.name}}</h3>
+                    <h2 >230</h2>
+
+                    <select class="my-3">
+                        <option>Select Size</option>
+                        <option>XL</option>
+                        <option>XXL</option>
+                        <option>Small</option>
+                        <option>Large</option>
+                    </select><br>
+                    <input type="number" value="1">
+                    <button class="btn-cart">Add To Cart</button>
+                    <h4 class="mt-5 mb-5" >Product Details</h4>
+                    <span >
+                        Comfortable & classic, this performance T-shirt featuring TRUMP WINERY on the left chest is there for you, whether you're training for our Race & Taste 10k or enjoying a lazy Sunday at the Tasting Room. •Size: large: 30" tall x 23" wide •Material: 52% organic cotton, 43% bamboo viscose, 5% elastane
+                    </span>
+                </div>
+            </div>
+        </section>
+{%endblock%}
+</body>
+</html>

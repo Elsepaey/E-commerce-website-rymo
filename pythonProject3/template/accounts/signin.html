@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    h1 {
+    font-size: 25pt;
+    color: black;
+    text-align: center;
+    padding: 100px 0 18px 0;
+    margin: 30 0 30px 0;
+}
+h1 span {
+    border: 4px dashed #20bcd5;
+    padding: 10px;
+
+
+}
+
+    .hello  {
+     text-align: center;
+     border: 4px  #20bcd5;
+
+    }
+
+        form {
+    text-align: center;
+    margin-top: 0;
+    padding:40px 0 0 20px;
+              }
+
+.submit {
+ background-color: black;
+    padding: 12px 45px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    margin-top: 15px;
+    font-weight: bold;
+
+}
+.submit:hover {
+    background-color: gray;
+}
+
+
+textarea {
+        height: 80px;
+         }
+     input{
+        margin-bottom: 10px;
+        font-size: 11pt;
+        padding: 10px 10px 10px 10px;
+        border: 1px solid #cecece;
+        background-color: #efefef;
+        color: #787575;
+        border-radius: 5px;
+        width: 50%;
+        outline: none;
+            }
+    </style>
+    <meta charset="UTF-8">
+    <title>rymo|sign in</title>
+</head>
+<body>
+{% extends 'base.html'%}
+{%block content%}
+<h1><span>Welcome</span></h1>
+        <div class="form">
+            {% if request.user.is_authenticated%}
+            <h1 class="hello">
+                Welcome {{request.user.username}}<br>
+                <a  href="{%url 'logout' %}" > <input type="submit" class="submit" value="Log out"><</a>
+            </h1>
+            {% else %}
+
+              <form method="post">
+                {% csrf_token %}
+            {% if messages%}
+                {% for msg in messages %}
+                 <h1>{{msg}}</h1>
+                {% endfor %}
+                {% endif %}
+
+               <h2>Username</h2>
+                <input name="user" type="text"  /><br/>
+                <h2>Password</h2>
+                <input name="pass" type="password"  /><br/>
+                  <input type="checkbox" checked name="rememberme">
+                 <input type="submit" class="submit" value="Log in">
+
+            </form>
+            {% endif %}
+
+        </div>
+{%endblock%}
+</body>
+</html>

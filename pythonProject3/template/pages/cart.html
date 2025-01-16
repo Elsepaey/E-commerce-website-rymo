@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #cart-container table
+{
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed
+
+}
+#cart-container table thead
+{
+    font-weight: 700;
+}
+#cart-container table thead td
+{
+    background: #fd8c66;
+    color: #fff;
+    border: none;
+    padding: 6px 0;
+}
+
+#cart-container table td
+{
+    border: 1px solid #b6b3b3;
+    text-align: center;
+}
+#cart-container table td:nth-child(1)
+{
+    width: 100px;
+}
+#cart-container table td:nth-child(2),
+#cart-container table td:nth-child(3)
+{
+    width: 200px;
+}
+#cart-container table td:nth-child(4),
+#cart-container table td:nth-child(5),
+#cart-container table td:nth-child(6)
+{
+    width: 170px;
+}
+#cart-container table tbody img
+{
+    width: 100px;
+    height: 80px;
+    object-fit: cover;
+}
+
+#cart-container table tbody i
+{
+    color:#8d8c89;
+}
+
+.btn-cart
+{
+    background: #fd8c66;
+    margin-top: 10px;
+    align-items: center;
+}
+    </style>
+</head>
+<body>
+{% extends 'base.html'%}
+{%load static%}
+{%block content%}
+<section id="blog-home" class="pt-5 mt-5 container">
+            <h2 class="font-weight-bold pt-5">Shopping Cart</h2>
+            <hr>
+        </section>
+        <section id="cart-container" class="container my-5">
+            <table width=100%>
+                <thead>
+                    <tr>
+                        <td>Remove</td>
+                        <td>Image</td>
+                        <td>Product</td>
+                        <td>Price</td>
+                        <td>Quantity</td>
+                        <td>Total</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="#"><i class="fa fa-trash-alt"></i></a></td>
+                        <td><img src="img/shoes/1.jpg" alt=""></td>
+                        <td><h5>Handbag Fringilla</h5></td>
+                        <td><h5>$65</h5></td>
+                        <td><input class="w-25 pl-1" value="1" type="number"></td>
+                        <td><h5>$130.00</h5></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#"><i class="fa fa-trash-alt"></i></a></td>
+                        <td><img src="img/shoes/2.jpg" alt=""></td>
+                        <td><h5>Handbag Fringilla</h5></td>
+                        <td><h5>$65</h5></td>
+                        <td><input class="w-25 pl-1" value="1" type="number"></td>
+                        <td><h5>$130.00</h5></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#"><i class="fa fa-trash-alt"></i></a></td>
+                        <td><img src="img/shoes/3.jpg" alt=""></td>
+                        <td><h5>Handbag Fringilla</h5></td>
+                        <td><h5>$65</h5></td>
+                        <td><input class="w-25 pl-1" value="1" type="number"></td>
+                        <td><h5>$130.00</h5></td>
+                    </tr>
+
+                </tbody>
+            </table>
+            <button class="btn-cart"><a href ="{% url 'payment'%}"> Purchase</a></button>
+        </section>
+</body>
+{%endblock%}
+</html>

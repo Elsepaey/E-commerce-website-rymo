@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+{% extends 'admin/base.html'%}
+{%load static%}
+{%block branding%}
+<h1 id ="head" style="color:black;font-size:20px;">
+   <img src="{%static 'img/logo1.png'%}" alt="logo" style="width:100px;height:45px;">
+     <b> adminstration</b> </h1>
+{%endblock%}
+{% block extrastyle %}
+<link rel="stylesheet" href="{% static 'css/admin.css'%}">
+{%endblock%}
+</body>
+</html>

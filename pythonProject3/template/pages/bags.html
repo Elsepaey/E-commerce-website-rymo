@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+{% extends 'base.html'%}
+{%load static%}
+{%block content%}
+ <section id="Shoes my-5 py-5">
+            <div id="Shope3" class="container text-center mt-5 py-5">
+                <h3>Bags</h3>
+                <hr class="mx-auto">
+                <p>Here you can check our new products with fair price on rymo.</p>
+                 <div class="searchform">
+                <form action="{% url 'bags' %}">
+                <label><b>Search For Your Product :</b></label>
+                <input name="searchname" type="search" />
+                <button>Search</button>
+                </form>
+              </div>
+            </div>
+            <div class="row mx-auto container-fluid">
+                {% for B in bags %}
+                <div class="product text-center col-lg-3 col-md-4 col-12">
+
+                    <img class="img-fluid mb-3" src="{{B.photo.url}}" alt="{{B.name}}">
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h5 class="p-name">{{B.name}}</h5>
+                    <h4 class="p-price">{{B.price}}</h4>
+                    <button class="buy-btn"><a href="#payment">Buy Now</a></button>
+
+                </div>
+                 {% endfor %}
+
+
+
+
+            </div>
+
+        </section>
+</body>
+{%endblock%}
+</html>
