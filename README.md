@@ -18,19 +18,19 @@ Here are some screenshots of the website:
 
 | **Home Page**             | **Product Listing**       |
 |---------------------------|---------------------------|
-| ![Home Page](screenshots/Screenshot 2022-01-06 201027)     | ![Product Listing](screenshots/Screenshot 2022-01-06 201111) |
+| ![Home Page](screenshots/Screenshot 2022-01-06 201027.png)     | ![Product Listing](screenshots/Screenshot 2022-01-06 201111.png) |
 
 | **Contact and Footer Section** | **Admin Login**          |
 |--------------------------------|--------------------------|
-| ![Contact and Footer](screenshots/Screenshot 2022-01-06 201246) | ![Admin Login](screenshots/Screenshot 2022-01-06 201328) |
+| ![Contact and Footer](screenshots/Screenshot 2022-01-06 201246.png) | ![Admin Login](screenshots/Screenshot 2022-01-06 201328.png) |
 
 | **Site Administration**   | **Add Product Page**     |
 |---------------------------|---------------------------|
-| ![Site Administration](screenshots/Screenshot 2022-01-06 201352) | ![Add Product](screenshots/Screenshot 2022-01-06 201413) |
+| ![Site Administration](screenshots/Screenshot 2022-01-06 201352.png) | ![Add Product](screenshots/Screenshot 2022-01-06 201413.png) |
 
 | **Database Management with PgAdmin** | **User Registration**    |
 |--------------------------------------|--------------------------|
-| ![PgAdmin](screenshots/Screenshot 2022-01-06 205555)              | ![User Registration](screenshots/Screenshot 2022-01-06 210109) |
+| ![PgAdmin](screenshots/Screenshot 2022-01-06 205555.png)              | ![User Registration](screenshots/Screenshot 2022-01-06 210109.png) |
 
 ---
 
