@@ -18,19 +18,19 @@ Here are some screenshots of the website:
 
 | **Home Page**             | **Product Listing**       |
 |---------------------------|---------------------------|
-| ![Home Page](https://github.com/Elsepaey/E-commerce-website-rymo/blob/master/screenshots/Screenshot%202022-01-06%20201027.png))     | ![Product Listing](screenshots/Screenshot 2022-01-06 201111.png) |
+| ![Home Page](https://github.com/Elsepaey/E-commerce-website-rymo/blob/master/screenshots/Screenshot%202022-01-06%20201027.png))     | ![Product Listing](https://github.com/Elsepaey/E-commerce-website-rymo/blob/master/screenshots/Screenshot%202022-01-06%20201111.png) |
 
 | **Contact and Footer Section** | **Admin Login**          |
 |--------------------------------|--------------------------|
-| ![Contact and Footer](screenshots/Screenshot 2022-01-06 201246.png) | ![Admin Login](screenshots/Screenshot 2022-01-06 201328.png) |
+| ![Contact and Footer](https://github.com/Elsepaey/E-commerce-website-rymo/blob/master/screenshots/Screenshot%202022-01-06%20201246.png) | ![Admin Login](https://github.com/Elsepaey/E-commerce-website-rymo/blob/master/screenshots/Screenshot%202022-01-06%20201328.png) |
 
 | **Site Administration**   | **Add Product Page**     |
 |---------------------------|---------------------------|
-| ![Site Administration](screenshots/Screenshot 2022-01-06 201352.png) | ![Add Product](screenshots/Screenshot 2022-01-06 201413.png) |
+| ![Site Administration](https://github.com/Elsepaey/E-commerce-website-rymo/blob/master/screenshots/Screenshot%202022-01-06%20201352.png) | ![Add Product](https://github.com/Elsepaey/E-commerce-website-rymo/blob/master/screenshots/Screenshot%202022-01-06%20201413.png) |
 
 | **Database Management with PgAdmin** | **User Registration**    |
 |--------------------------------------|--------------------------|
-| ![PgAdmin](screenshots/Screenshot 2022-01-06 205555.png)              | ![User Registration](screenshots/Screenshot 2022-01-06 210109.png) |
+| ![PgAdmin](https://github.com/Elsepaey/E-commerce-website-rymo/blob/master/screenshots/Screenshot%202022-01-06%20205555.png)              | ![User Registration](https://github.com/Elsepaey/E-commerce-website-rymo/blob/master/screenshots/Screenshot%202022-01-06%20210109.png) |
 
 ---
 
