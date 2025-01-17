@@ -18,7 +18,7 @@ Here are some screenshots of the website:
 
 | **Home Page**             | **Product Listing**       |
 |---------------------------|---------------------------|
-| ![Home Page](screenshots/Screenshot 2022-01-06 201027.png)     | ![Product Listing](screenshots/Screenshot 2022-01-06 201111.png) |
+| ![Home Page](https://github.com/Elsepaey/E-commerce-website-rymo/blob/master/screenshots/Screenshot%202022-01-06%20201027.png))     | ![Product Listing](screenshots/Screenshot 2022-01-06 201111.png) |
 
 | **Contact and Footer Section** | **Admin Login**          |
 |--------------------------------|--------------------------|
