@@ -18,7 +18,7 @@ Here are some screenshots of the website:
 
 | **Home Page**             | **Product Listing**       |
 |---------------------------|---------------------------|
-| ![Home Page](screenshots/home.png)     | ![Product Listing](screenshots/product_listing.png) |
+| ![Home Page](screenshots\home.png)     | ![Product Listing](screenshots\product_listing.png) |
 
 | **Product Details**       | **More Products**         |
 |---------------------------|---------------------------|
